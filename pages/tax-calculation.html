@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Details</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="..\css\style.css" />
+  <link rel="stylesheet" href="..\css\header.css" />
+  <link rel="stylesheet" href="..\css\sidebar.css" />
+  <link rel="stylesheet" href="..\css\basic-details.css" />
+  <link rel="stylesheet" href="..\css\tax-calculation.css" />
+</head>
+
+<body>
+  <div class="header">
+    <!-- start for logo and title -->
+    <div class="logo">
+      <img src="../Images/logo.png" alt="logo" />
+    </div>
+    <!-- end for logo and title -->
+
+    <!-- start for username at header -->
+    <div class="user-account">
+      <div class="user-name">Hi, <b>Darshak Ardeshana</b></div>
+      <div class="account-image">
+        <span class="material-icons-outlined" id="icon-account">
+          account_circle
+        </span>
+      </div>
+    </div>
+    <!-- end for username at header -->
+  </div>
+
+  <!-- start user basic details  -->
+  <div class="user-basic-details">
+    <div class="user-basic-details-left">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">PAN Card No.:</div>
+        <span class="basic-detail-item-value">AAAAA1111A</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">DOB :</div>
+        <span class="basic-detail-item-value">19/07/2000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <label for="years" class="basic-detail-item-title">Financial Year :
+        </label>
+        <select name="years" id="years" class="basic-detail-item-value">
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="user-basic-details-right">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Income :</div>
+        <span id="total-income" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Deduction :</div>
+        <span id="total-dedcution" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Tax to be Paid :</div>
+        <span id="tax-to-be-paid" class="basic-detail-item-value">12000</span>
+      </div>
+    </div>
+  </div>
+  <!-- end user basic details -->
+
+  <div class="main-container">
+    <div class="sidebar">
+      <a href="income.html">
+        <div class="sidebar-item" id="sidebar-item-income">
+          <h2> Income</h2>
+        </div>
+      </a>
+      <hr />
+      <a href="expense.html">
+        <div id="expense" class="sidebar-item" id="sidebar-item-expense">
+          <h2> Expense </h2>
+        </div>
+      </a>
+      <hr />
+      <a href="tax-calculation.html">
+        <div id="calculator" class="sidebar-item sidebar-item-active">
+          <h2> Tax Calculation </h2>
+        </div>
+      </a>
+      <hr />
+    </div>
+
+    <div class="main-content">
+      <div class="main-content-deduction">
+        <div class="main-content-title">
+          <h1>Deduction Details</h1>
+        </div>
+        <div class="main-content-body">
+          <table class="table table-hover" border="1">
+            <thead>
+              <th class="text-left">Sr.</th>
+              <th>Nature</th>
+              <th>
+                <div class="icon-with-text">
+                  Maximum Deduction
+                  <span class="material-icons-outlined">
+                    currency_rupee
+                  </span>
+                </div>
+              </th>
+              <th>
+                <div class="icon-with-text">
+                  Amount Claimed
+                  <span class="material-icons-outlined">
+                    currency_rupee
+                  </span>
+                </div>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text-center tooltip">
+                  <div class="icon-with-text">
+                    Section 80TTA
+                    <span class="material-icons-outlined">info</span>
+                    <span class="tooltip-text">we get maximum of 12,500 Amount of Interest Deposited in account as
+                      deduction from taxable income</span>
+                  </div>
+                </td>
+                <td class="text-right">
+                  10000
+                </td>
+                <td class="text-right">
+                  8000
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="text-center tooltip">
+                  <div class="icon-with-text">
+                    Section 80C
+                    <span class="material-icons-outlined">info</span>
+                    <span class="tooltip-text">we get maximum of 1,50,000 Amount of salary, LIC premium as deduction
+                      from
+                      taxable income</span>
+                  </div>
+                </td>
+                <td class="text-right">
+                  1,50,000
+                </td>
+                <td class="text-right">
+                  1,50,000
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="main-content-tax-calculation">
+        <div class="main-content-title">
+          <h1>Tax Calculation</h1>
+          <button class="button">
+            <div class="icon-with-text">
+              <span class="material-icons-outlined">
+                file_download
+              </span>
+              Download PDF
+            </div>
+          </button>
+        </div>
+        <div class="main-content-body">
+          <table class="table table-hover" border="1">
+            <thead>
+              <th>Nature</th>
+              <th>
+                <div class="icon-with-text">
+                  Amount
+                  <span class="material-icons-outlined">
+                    currency_rupee
+                  </span>
+                </div>
+              </th>
+              <th>
+                <div class="icon-with-text">
+                  Total
+                  <span class="material-icons-outlined">
+                    currency_rupee
+                  </span>
+                </div>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3">
+                  <h3>Income</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>From Salary</td>
+                <td class="text-right">16,50,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>From other</td>
+                <td class="text-right">2,50,000</td>
+                <td></td>
+              </tr>
+              <tr class="">
+                <td>Gross Total Income</td>
+                <td></td>
+                <td class="text-right">19,00,000</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <h3>Deduction</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>Section 80TTA</td>
+                <td class="text-right">8000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Section 80C</td>
+                <td class="text-right">1,50,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Total Deduction</td>
+                <td></td>
+                <td class="text-right">19,00,000</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3>Gross Taxable Income</h3>
+                </td>
+                <td class="text-right">
+                  <h3>17,42,000</h3>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3>Total tax on above Income</h3>
+                </td>
+                <td class="text-right">
+                  <h3>2,75,850</h3>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3>Rebate to be receive</h3>
+                </td>
+                <td class="text-right">
+                  <h3>11,500</h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

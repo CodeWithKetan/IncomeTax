@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Details</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="..\css\style.css" />
+  <link rel="stylesheet" href="..\css\header.css" />
+  <link rel="stylesheet" href="..\css\sidebar.css" />
+  <link rel="stylesheet" href="..\css\basic-details.css" />
+  <link rel="stylesheet" href="..\css\income.css" />
+</head>
+
+<body onload="setTabNavigation()">
+  <div class="header">
+    <div class="logo">
+      <img src="../Images/logo.png" alt="logo" />
+    </div>
+    <div class="user-account">
+      <div class="user-name">Hi, <b>Ghori Ketan</b></div>
+      <div class="account-image">
+        <span class="material-icons-outlined" id="icon-account">
+          account_circle</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- start user basic details  -->
+  <div class="user-basic-details">
+    <div class="user-basic-details-left">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">PAN Card No.:</div>
+        <span class="basic-detail-item-value">AAAAA1111A</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">DOB :</div>
+        <span class="basic-detail-item-value">19/07/2000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <label for="years" class="basic-detail-item-title">Financial Year :
+        </label>
+        <select name="years" id="years" class="basic-detail-item-value">
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="user-basic-details-right">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Income :</div>
+        <span id="total-income" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Deduction :</div>
+        <span id="total-dedcution" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Tax to be Paid :</div>
+        <span id="tax-to-be-paid" class="basic-detail-item-value">12000</span>
+      </div>
+    </div>
+  </div>
+  <!-- end user basic details -->
+
+  <div class="main-container">
+    <!-- start of sidebar -->
+    <div class="sidebar">
+      <a href="income.html">
+        <div class="sidebar-item sidebar-item-active" id="sidebar-item-income">
+          <h2>Income</h2>
+        </div>
+      </a>
+      <hr />
+      <a href="expense.html">
+        <div id="expense" class="sidebar-item" id="sidebar-item-expense">
+          <h2>Expense</h2>
+        </div>
+      </a>
+      <hr />
+      <a href="tax-calculation.html">
+        <div id="calculator" class="sidebar-item">
+          <h2 s>Tax Calculation</h2>
+        </div>
+      </a>
+      <hr />
+    </div>
+    <!-- end of sidebar -->
+
+    <!-- start of main content -->
+    <div class="a">
+      <div class="main-content">
+        <div class="tabs">
+          <div class="tab-header">
+            <div class="active">Salary Income</div>
+            <div>Interest Income</div>
+            <div>Rental Income</div>
+            <div>Other Income</div>
+          </div>
+
+          <div class="tab-body">
+            <!-- start salary income table -->
+            <div class="active">
+              <table class="table table-hover" border="1">
+                <thead>
+                  <th>Sr.</th>
+                  <th>Income Per Year</th>
+                  <th>Income Tax Paid</th>
+                  <th>Professional Tax</th>
+                  <th>EPF</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="text-left">1</td>
+                    <td class="text-right">1300000</td>
+                    <td class="text-right">250000</td>
+                    <td class="text-right">400</td>
+                    <td class="text-right">120000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end salary income table -->
+
+            <!-- start interest income -->
+            <div>
+              <table class="table table-hover" border="1">
+                <thead>
+                  <th>Sr.</th>
+                  <th>BankCode</th>
+                  <th>AccountNo</th>
+                  <th>Interest Credited</th>
+                  <th>TDS Deduction</th>
+                  <th>Challan No</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="text-left">1</td>
+                    <td class="text-left">ICICI</td>
+                    <td class="text-left">1225658663</td>
+                    <td class="text-right">12735</td>
+                    <td class="text-right">636.75</td>
+                    <td class="text-left">7393576594</td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">2</td>
+                    <td class="text-left">SBI</td>
+                    <td class="text-left">1285658663</td>
+                    <td class="text-right">1275</td>
+                    <td class="text-right">0</td>
+                    <td class="text-right">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end interest income -->
+
+            <!-- start rental income -->
+            <div>
+              <div class="rental-incomepform-section">
+                <form id="form-rental-income">
+                  <div class="form-rental-income-editable-element">
+                    <div class="form-element-rental-income-up">
+                      <div>
+                        <label for="rental-income-amount">Amount*</label><br />
+                        <input type="text" id="rental-income-amount" required />
+                      </div>
+
+                      <div>
+                        <label for="rental-income-date">Date*</label><br />
+                        <input type="date" id="rental-income-date" required />
+                      </div>
+
+                      <div>
+                        <label for="rental-income-pincode">Pincode*</label><br />
+                        <input type="text" id="rental-income-pincode" required />
+                      </div>
+                    </div>
+
+                    <div class="form-element-rental-income-down">
+                      <label for="rental-income-address">Address*</label><br />
+                      <textarea id="rental-income-address" rows="2" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-element-buttons">
+                    <button class="button" type="submit">Add</button>
+                    <button class="button" type="reset">Clear</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="rental-income-table-data">
+                <table class="table table-hover" id="table-rental-income" border="1">
+                  <thead>
+                    <th>Sr.</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Pincode</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-left">1</td>
+                      <td class="text-right">120000</td>
+                      <td class="text-center">
+                        2022-01-19
+                      </td>
+                      <td class="text-left">364320</td>
+                      <td class="text-left">
+                        213, A block near Shivaji garden
+                        house no. 333 shivalay complex
+                      </td>
+
+                      <td class="text-center">
+                        <button class="table-button"><i class="material-icons-outlined">edit</i></button>
+                        <button class="table-button"><i class="material-icons-outlined">delete</i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end rental income -->
+
+            <!-- start other income -->
+            <div>
+              <div class="other-income-form-section">
+                <form id="form-other-income">
+                  <div class="form-other-income-editable-element">
+                    <div class="form-element-other-income-left">
+                      <label for="other-income-amount">Amount*</label><br />
+                      <input type="text" id="other-income-amount" required />
+                      <br />
+                      <label for="other-income-date">Date*</label><br />
+                      <input type="date" id="other-income-date" required />
+                    </div>
+
+                    <div class="form-element-other-income-right">
+                      <label for="other-income-description">Description*</label><br />
+                      <textarea id="other-income-description" rows="5" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-element-buttons">
+                    <button class="button" type="submit">Add</button>
+                    <button class="button" type="reset">Clear</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="other-income-table-data">
+                <table class="table table-hover" id="table-other-income" border="1">
+                  <thead>
+                    <tr>
+                      <th>Sr.</th>
+                      <th>Amount</th>
+                      <th>Date</th>
+                      <th>Description</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-left">1</td>
+                      <td class="text-right">1300000</td>
+                      <td class="text-center"> 2022-01-19 </td>
+                      <td class="text-left">Income from stock market</td>
+                      <td class="text-center">
+                        <button class="table-button"><i class="material-icons-outlined">edit</i></button>
+                        <button class="table-button"><i class="material-icons-outlined">delete</i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end other income -->
+          </div>
+        </div>
+      </div>
+      <div class="tab-footer">
+        <button class="button" onclick="previousIncomeTab()" id="previousIncomeTabButton">
+          Previous
+        </button>
+        <button class="button" onclick=" nextIncomeTab()" id="nextIncomeTabButton">
+          Next
+        </button>
+      </div>
+    </div>
+    <!-- end of main content -->
+
+  </div>
+  <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

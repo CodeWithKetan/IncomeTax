@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Details</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="..\css\style.css" />
+  <link rel="stylesheet" href="..\css\header.css" />
+  <link rel="stylesheet" href="..\css\sidebar.css" />
+  <link rel="stylesheet" href="..\css\basic-details.css" />
+  <link rel="stylesheet" href="..\css\income.css" />
+</head>
+
+<body onload="setTabNavigation()">
+  <div class="header">
+    <div class="logo">
+      <img src="../Images/logo.png" alt="logo" />
+    </div>
+    <div class="user-account">
+      <div class="user-name">Hi, <b>Ghori Ketan</b></div>
+      <div class="account-image">
+        <span class="material-icons-outlined" id="icon-account">
+          account_circle</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- start user basic details  -->
+  <div class="user-basic-details">
+    <div class="user-basic-details-left">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">PAN Card No.:</div>
+        <span class="basic-detail-item-value">AAAAA1111A</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">DOB :</div>
+        <span class="basic-detail-item-value">19/07/2000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <label for="years" class="basic-detail-item-title">Financial Year :
+        </label>
+        <select name="years" id="years" class="basic-detail-item-value">
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="user-basic-details-right">
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Income :</div>
+        <span id="total-income" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Total Deduction :</div>
+        <span id="total-dedcution" class="basic-detail-item-value">1200000</span>
+      </div>
+
+      <div class="basic-detail-item">
+        <div class="basic-detail-item-title">Tax to be Paid :</div>
+        <span id="tax-to-be-paid" class="basic-detail-item-value">12000</span>
+      </div>
+    </div>
+  </div>
+  <!-- end user basic details -->
+
+  <div class="main-container">
+    <!-- start of sidebar -->
+    <div class="sidebar">
+      <a href="income.html">
+        <div class="sidebar-item" id="sidebar-item-income">
+          <h2>Income</h2>
+        </div>
+      </a>
+      <hr />
+      <a href="expense.html">
+        <div id="expense" class="sidebar-item sidebar-item-active" id="sidebar-item-expense">
+          <h2>Expense</h2>
+        </div>
+      </a>
+      <hr />
+      <a href="tax-calculation.html">
+        <div id="calculator" class="sidebar-item">
+          <h2 s>Tax Calculation</h2>
+        </div>
+      </a>
+      <hr />
+    </div>
+    <!-- end of sidebar -->
+
+    <div class="a">
+      <!-- start of main content -->
+      <div class="main-content">
+        <div class="tabs">
+          <div class="tab-header">
+            <div class="active">Home Loan</div>
+            <div>Insurance Payment</div>
+            <div>POS Transaction</div>
+          </div>
+
+          <div class="tab-body">
+            <!-- start home loan table -->
+            <div class="active">
+              <table class="table table-hover" border="1">
+                <thead>
+                  <th>Sr.</th>
+                  <th>Bank Code</th>
+                  <th>Account No.</th>
+                  <th>Interest Paid</th>
+                  <th>Principle Paid</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>SBI</td>
+                    <td>ABC123</td>
+                    <td class="text-right">40000</td>
+                    <td class="text-right">150000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end home loan table -->
+
+            <!-- start Insurance payment -->
+            <div>
+              <table class="table table-hover" border="1">
+                <thead>
+                  <th>Sr.</th>
+                  <th>Policy No.</th>
+                  <th>Policy Type</th>
+                  <th>Premium Paid</th>
+                  <th>Payment Date</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>ABC123</td>
+                    <td>Term Insurance</td>
+                    <td class="text-right">50000</td>
+                    <td class="text-center">12/12/2022</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end Insurance payment -->
+
+            <!-- start POS Transaction -->
+            <div>
+              <table class="table table-hover" border="1">
+                <thead>
+                  <th>Sr.</th>
+                  <th>Bank Code</th>
+                  <th>Account no.</th>
+                  <th>Vendor Name</th>
+                  <th>Reference No</th>
+                  <th>Amount</th>
+                  <th>Payment Date</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>SBI</td>
+                    <td>ABC123</td>
+                    <td>Amazon</td>
+                    <td>asdfkj123512</td>
+                    <td class="text-right">50000</td>
+                    <td class="text-center">12/12/2021</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- end POS transaction -->
+        </div>
+        <!-- end of main content -->
+      </div>
+      <div class="tab-footer">
+        <button class="button" onclick="previousIncomeTab()" id="previousIncomeTabButton">
+          Previous
+        </button>
+        <button class="button" onclick=" nextIncomeTab()" id="nextIncomeTabButton">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

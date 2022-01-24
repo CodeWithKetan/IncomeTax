@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0">
+    <title>Income Tax - Super Easy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index-page.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- header starts -->
+        <div class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="header-right">
+                <div class="header-right-top">
+                    <div class="header-menu">
+                        <i class="material-icons">call</i>
+                        <a href="#">99999-99999</a>
+                    </div>
+                    <div class="header-menu">
+                        <i class="material-icons">call</i>
+                        <a href="#">88888-88888</a>
+                    </div>
+                </div>
+                <div class="header-right-bottom">
+                    <div class="header-menu">
+                        <i class="material-icons">home</i>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="header-menu">
+                        <i class="material-icons">person</i>
+                        <a href="#aboutUs">About Us</a>
+                    </div>
+                    <div class="header-menu">
+                        <i class="material-icons">contact_support</i>
+                        <a href="#contactUs">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- main body starts -->
+
+
+
+        <div class="content-login">
+            <div class="login-header">
+                <h1>Login here</h1>
+                <hr />
+            </div>
+            <div class="login-form">
+                <form action="pages/income.html">
+                    <input class="txtPanCard" type="text" placeholder="Enter PAN Card No."><br>
+                    <input class="btnLogin" type="submit" value="Proceed">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- login form end -->
+
+    <!-- why we/ about us start -->
+    <div class="main-content-about-us" id="aboutUs">
+        <h1>Why we?</h1>
+        <div class="why-we-cards">
+            <div class="why-we-card">
+                <span>We ensure <b>accurate</b> tax filing</span>
+                <img src="images/why-we-target.jpg" alt="">
+            </div>
+            <div class="why-we-card">
+                <span>You get <b>maximum</b> tax <b>saving</b></span>
+                <img src="images/why-we-piggy-bank.jpg" alt="">
+            </div>
+            <div class="why-we-card">
+                <span>Very Simple UI, Easy to used</span>
+                <img src="images/why-we-easy-ui.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- why we/ about us end -->
+
+    <!-- contact us start -->
+    <div class="main-content-contact-us" id="contactUs">
+        <div class="contact-us-title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-us-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1644.6414360685899!2d70.77823027596489!3d22.274387572514623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12bb816325a7b4c2!2sTark%20Technologies!5e0!3m2!1sen!2sin!4v1642497604035!5m2!1sen!2sin"
+                width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-us-text">
+            <h4>Address</h4>
+            <p style="margin: 5px 10px;">309 - Tark Technologies,<br> The Millennium <br> 150 Feet
+                Ring Road, <br>
+                near Nana Mava circle <br>
+                Rajkot, Gujarat 360004.</p>
+            <div class="contact-us-text-card">
+                <i class="material-icons">call</i>
+                <a href="tel:+919999999999">99999-99999</a>
+            </div>
+            <div class="contact-us-text-card">
+                <i class="material-icons">call</i>
+                <a href="tel:+918888888888">88888-88888</a>
+            </div>
+        </div>
+    </div>
+    <!-- contact us end -->
+    </div>
+    <!-- main body ends -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-text">
+            &copy; 2022 All rights are reserved by <b>Income Tax - Super Easy</b>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <script src="JavaScript/script.js"></script>
+
+    <script>
+        window.addEventListener('scroll', (event) => {
+            if (window.scrollY > 80) {
+                document.querySelector(".header").classList.add("scrolled");
+            } else {
+                document.querySelector(".header").classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

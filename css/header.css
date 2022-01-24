@@ -1,0 +1,46 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	box-shadow: 10px 10px 10px -15px #888888;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo img {
+	padding-left: 25px;
+	width: 200px;
+}
+
+.user-account {
+	display: flex;
+	align-items: center;
+}
+
+.user-name {
+	font-size: 15px;
+	padding: 10px 2px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+.user-name  {
+	font-size: 18px;
+	color:#01b2c6 ;
+}
+
+#icon-account {
+	color: #314259;
+	font-size: 30px;
+	padding: 10px;
+}

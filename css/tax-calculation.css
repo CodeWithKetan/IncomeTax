@@ -1,0 +1,62 @@
+body {
+	background-color: #f4f7f6;
+}
+
+.main-content {
+	
+	width: 85%;
+	margin-left: 20px;
+}
+
+.main-content-deduction,
+.main-content-tax-calculation {
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: white;	
+	border : 1px solid #cbdfe8;
+	border-radius: 5px;
+}
+
+.main-content-tax-calculation .main-content-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-content-title {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.main-content-title h1 {
+	font-size: 25px;
+}
+
+/* table style starts */
+.material-icons-outlined {
+	font-size: 17px;
+}
+/* table style ends */
+
+/* tooltip style starts */
+.tooltip {
+	position: relative;
+}
+
+.tooltip .tooltip-text {
+	visibility: hidden;
+	width: 220px;
+	background-color: black;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 6px;
+
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+}
+/* tooltip style ends */

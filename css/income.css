@@ -1,0 +1,164 @@
+body {
+	background-color: #f4f7f6;
+}
+
+.a{
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content {
+	overflow-y: scroll;
+	margin-left: 20px;
+	background-color: white;
+	height: 70vh;
+	max-height: 70vh;
+	border-radius: 5px;
+	border : 1px solid #cbdfe8;
+}
+
+/* start style for tabs header */
+.tabs {
+	width: 100%;
+}
+
+.tabs .tab-header {
+	padding: 10px;
+	display: flex;
+}
+
+.tab-header div {
+	width: 25%;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 20px;
+	color: #314259;
+	cursor: pointer;
+	font-weight: 400;
+	margin-bottom: 3px;
+}
+
+.tab-header div.active {
+	font-weight: 600;
+	border-bottom: 2px solid #314259;
+}
+/* end style for tabs header */
+
+/* start style for tab body */
+.tab-body {
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.tabs .tab-body > div {
+	display: none;
+}
+
+.tabs .tab-body div.active {
+	display: inline;
+}
+/* end style for tab body */
+
+/* start style for rental income form */
+#form-rental-income {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.form-element-rental-income-up {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-element-rental-income-up > div {
+	width: 30%;
+}
+
+.form-element-rental-income-down > textarea {
+	width: 100%;
+	padding: 11px;
+	resize: none;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	 border: 1px solid #cbdfe8;
+	outline: none
+}
+
+input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+	padding: 11px;
+	 border: 1px solid #cbdfe8; 
+	border-radius: 3px;
+	outline: none;
+}
+
+input:focus
+{
+	outline: 1px solid #cbdfe8;
+}
+/* end style for rental income form */
+
+/* start style for other income form */
+.other-income-form-section form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.tab-body .other-income-form-section {
+	padding: 10px 0;
+	width: 100%;
+}
+
+.form-other-income-editable-element {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-element-other-income-left {
+	width: 30%;
+	margin-right: 2%;
+}
+
+.form-element-other-income-right {
+	width: 70%;
+}
+
+.form-other-income-editable-element textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	resize: none;
+	padding: 11px;
+	border-radius: 3px;
+	border: 1px solid #cbdfe8;
+	outline: none
+}
+
+textarea :focus{
+	outline: 1px solid #cbdfe8;
+}
+
+/* end style for other income form */
+
+/* start style for previous and next button */
+.tab-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.tab-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+/* end style for previous and next button */

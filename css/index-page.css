@@ -1,0 +1,203 @@
+.main{
+	background-image: url(/images/b1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 100px);
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	height: 100px;
+	background-color: transparent;
+	background:rgba(255,255,255,0.1);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header.scrolled {
+	background-color: #ffffff;
+	box-shadow: 0px 5px 8px -1px rgb(0, 0, 0, 0.5);
+}
+
+.header-left img {
+	width: 220px;
+}
+
+.header-right {
+	align-items: center;
+}
+
+.header-right-top,
+.header-right-bottom {
+	display: flex;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+}
+
+.header-menu a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.content-img,
+.content-img img {
+	padding: 10px;
+	width: 100%;
+}
+
+
+.content-login {
+	margin-left:15%;
+	background-color: rgb(79, 94, 113,0.3);
+	background-size: contain;
+	width: 400px;
+	height: fit-content;
+	justify-content: center;
+	border-radius: 10px;
+	margin-top: 130px;
+}
+
+.login-header {
+	align-self: left;
+	height: 25px;
+	padding: 0px 15px;
+	margin: 5px 0px;
+	color: #fdf7ff;
+}
+
+hr {
+	height: 1px;
+	background-color: rgb(255, 255, 250);
+	border: none;
+}
+
+.login-form {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.txtPanCard {
+	border: 0;
+	padding: 10px;
+	margin: 10px 0;
+	height: 30px;
+	outline: none;
+	width: 85%;
+	align-self: center;
+	background-color: rgb(255, 255, 250, 0.5);
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.btnLogin {
+	height: 30px;
+	padding: 3px;
+	width: 30%;
+	border: none;
+	align-self: center;
+	border-radius: 5px;
+	background-color: #01b2c6;
+	cursor: pointer;
+	color: white;
+}
+
+.btnLogin:hover
+{
+	background-color:#cbdfe8;
+	cursor: pointer;
+}
+
+.login-header h1 {
+	padding: 10px 0;
+	font-size: 20px;
+	color: #fdf7ff;
+}
+
+.main-content-about-us {
+	background-color: #fff;
+	padding: 50px 0px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.main-content-about-us h1 {
+	margin: 20px;
+}
+
+.why-we-cards {
+
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.why-we-card {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 2px solid #cbdfe8;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+
+.why-we-card img {
+	width: 250px;
+	height: 250px;
+}
+
+.why-we-card span {
+	font-size: x-large;
+	margin: 20px 0;
+}
+
+.main-content-contact-us {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #cbdfe8;
+}
+
+.contact-us-title {
+	flex: 1;
+	margin: 30px;
+}
+
+.contact-us-map {
+	flex: 4;
+	margin: 25px;
+}
+
+.contact-us-text {
+	flex: 1;
+	margin: 0 40px;
+}
+
+.contact-us-text-card {
+	display: flex;
+	align-items: center;
+}
+
+.contact-us-text-card a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 40px;
+	background-color: #929191;
+}

@@ -1,0 +1,179 @@
+body {
+	background-color: #f9f9f9;
+}
+.main-alert {
+	display: flex;
+	margin: 15px 10px;
+	padding: 10px;
+	border: 1px solid #d6e7fe;
+	justify-content: flex-start;
+	align-content: center;
+	background-color: #ffbdbd;
+	color: #ff0000;
+	border: none;
+	box-shadow: 0px 5px 8px -1px rgb(255, 167, 167);
+}
+
+.main-alert .material-icons-outlined {
+	padding: 0 10px;
+}
+.main-content {
+	width: 85%;
+	margin-left: 20px;
+	box-shadow: 0 5px 8px -5px rgba(255, 188, 188, 0.75);
+	border: 2px solid #ff0000;
+}
+/* start style for tabs header */
+.tabs {
+	width: 100%;
+}
+
+.tabs .tab-header {
+	padding: 10px;
+	display: flex;
+}
+
+.tab-header div {
+	width: 25%;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 20px;
+	color: #314259;
+	cursor: pointer;
+	font-weight: 400;
+	margin-bottom: 3px;
+}
+
+.tab-header div.active {
+	font-weight: 600;
+	border-bottom: 2px solid #314259;
+}
+/* end style for tabs header */
+
+/* start style for tab body */
+.tab-body {
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.tabs .tab-body > div {
+	display: none;
+}
+
+.tabs .tab-body div.active {
+	display: inline;
+}
+/* end style for tab body */
+
+/* start style for rental income form */
+#form-rental-income {
+	display: flex;
+	flex-direction: column;
+	border: 1px dotted #000000;
+	padding: 10px;
+}
+
+.form-element-rental-income-up {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-element-rental-income-up > div {
+	width: 30%;
+}
+
+.form-element-rental-income-down > textarea {
+	width: 100%;
+	padding: 11px;
+	resize: none;
+}
+
+input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+	padding: 11px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+
+/* end style for rental income form */
+
+/* start style for other income form */
+.other-income-form-section form {
+	display: flex;
+	flex-direction: column;
+	border: 1px dotted #000000;
+	padding: 10px;
+}
+
+.tab-body .other-income-form-section {
+	padding: 10px 0;
+	width: 100%;
+}
+
+.form-other-income-editable-element {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-element-other-income-left {
+	width: 30%;
+	margin-right: 2%;
+}
+
+.form-element-other-income-right {
+	width: 70%;
+}
+
+.form-other-income-editable-element textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	resize: none;
+	padding: 11px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+/* end style for other income form */
+
+/* start style for add clear button in form */
+.form-element-buttons > button {
+	color: #fdf7ff;
+	background-color: #314259;
+	padding: 7px;
+	margin: 10px 5px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+}
+/* end style for add clear button in form */
+
+/* start style for previous and next button */
+.tab-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.tab-footer button {
+	color: #fdf7ff;
+	background-color: #314259;
+	padding: 7px;
+	margin: 10px 5px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+	/* padding: 10px; */
+	/* border: 1px solid #314259; */
+}
+
+.tab-footer button:hover {
+	background-color: #cccccc;
+	outline: none;
+}
+/* end style for previous and next button */
