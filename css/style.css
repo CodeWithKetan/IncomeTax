@@ -59,6 +59,7 @@ h6 {
 .table-button {
 	border: none;
 	background-color: transparent;
+	margin-right:5px;
 	cursor: pointer;
 }
 
