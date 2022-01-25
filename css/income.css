@@ -140,7 +140,7 @@ input:focus
 	outline: none
 }
 
-textarea :focus{
+textarea:focus{
 	outline: 1px solid #cbdfe8;
 }
 
